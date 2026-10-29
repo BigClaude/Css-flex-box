@@ -19,11 +19,15 @@ text-decoration: none;
     background: none;
   }
   img{
-    width: 100%;
+    width: 200px;
+    width: 200px;
   }
   /* setting color to navigation bar */
   header{
+    position: fixed;
+    width: 100px;
    background-color: rgb(75, 13, 13);
+   z-index=5;
  }
  /* styling navi menu */
  header .navibar{
@@ -40,9 +44,66 @@ text-decoration: none;
 
 .navibar .new-logo .logo-txt{
   color: white;
+  font-size: 20px;
+  
 }
 .navibar .menu-links .navi-link{
   padding: 10px 18px;
-  background:goldenrod;
   color: white;
+  border-radius: 20px;
+  transition:0.5s ease-in ;
 }
+.navibar .menu-links .navi-link:hover{
+  color: white;
+background:goldenrod;
+}
+/* styling hero section */
+
+
+.hero-sec {
+   min-height: 100vh;
+  background-color: rgb(75, 13, 13);
+}
+.hero-sec .sec-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  min-height: 100vh;
+
+ 
+}
+
+.hero-sec  .hero-detials .title{
+  color: rgb(16, 138, 245);
+  font-size: 25px;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.hero-sec .hero-detials .subtitle{
+  color: goldenrod;
+  margin-top: 10px;
+  max-width: 70%;
+} 
+.hero-detials {
+  max-width: 70%;
+  margin: 24px 0 40px;
+}
+ .hero-sec  .hero-img-wrap{
+  max-width: 500px;
+  margin-right: 30px;
+
+ }
+ .hero-sec  .hero-detials .button{
+  border-radius: 20px;
+  color: rgb(75, 13, 13);
+  background-color: goldenrod
+ 
+ }
+ .hero-sec  .hero-detials .button:hover{
+  background-color: rgb(60, 63, 66);
+  transition: 0.5se ease-in;
+ }
+ .hero-sec  .hero-detials .buttons{
+  display: flex;
+  gap: 23px;
+ }
